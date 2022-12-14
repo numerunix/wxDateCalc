@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the wxdatecalc package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: wxdatecalc\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-12-14 05:51+0100\n"
+"PO-Revision-Date: 2022-12-14 06:01+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.2.2\n"
+
+#: wxDateCalcMain.cpp:63
+msgid "&Quit\tAlt-F4"
+msgstr "&Verlassen\tAlt+F4"
+
+#: wxDateCalcMain.cpp:63
+msgid "Quit the application"
+msgstr "Beenden Sie die Anwendung"
+
+#: wxDateCalcMain.cpp:64
+msgid "&File"
+msgstr "&Datei"
+
+#: wxDateCalcMain.cpp:67
+msgid "&About\tF1"
+msgstr "&Um\tF1"
+
+#: wxDateCalcMain.cpp:67
+msgid "Show info about this application"
+msgstr "Informationen zu dieser Anwendung anzeigen"
+
+#: wxDateCalcMain.cpp:68
+msgid "&Help"
+msgstr "&Hilfe"
+
+#: wxDateCalcMain.cpp:76
+msgid "Hello Code::Blocks user!"
+msgstr "Hallo Code::Blocks-Benutzer!"
+
+#: wxDateCalcMain.cpp:92
+msgid "Insert the date: "
+msgstr "Datum einfügen: "
+
+#: wxDateCalcMain.cpp:94
+msgid "Calculate"
+msgstr "Berechnung"
+
+#: wxDateCalcMain.cpp:139
+msgid "Un altro countdown in wxwidgets"
+msgstr "Ein alter Countdown in wxwidgets"
+
+#: wxDateCalcMain.cpp:155
+msgid "There are "
+msgstr "Es bleiben noch "
+
+#: wxDateCalcMain.cpp:155
+msgid " days, "
+msgstr " Tage "
+
+#: wxDateCalcMain.cpp:155
+msgid " hours and "
+msgstr " Stunden un "
+
+#: wxDateCalcMain.cpp:155
+msgid " minutes left."
+msgstr " Minuten."
