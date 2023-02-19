@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wxdatecalc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-14 23:31+0100\n"
-"PO-Revision-Date: 2022-12-14 23:33+0100\n"
+"POT-Creation-Date: 2023-02-19 07:24+0100\n"
+"PO-Revision-Date: 2023-02-19 07:31+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pt\n"
@@ -62,18 +62,30 @@ msgstr "Imagens"
 msgid "Un altro countdown in wxwidgets"
 msgstr "Outra contagem regressiva em wxwidgets"
 
-#: wxDateCalcMain.cpp:156
+#: wxDateCalcMain.cpp:153
+msgid "Error"
+msgstr "Erro"
+
+#: wxDateCalcMain.cpp:153
+msgid "Invalid lvalue"
+msgstr "lvalue inválido"
+
+#: wxDateCalcMain.cpp:162
+msgid "Information"
+msgstr "Informação"
+
+#: wxDateCalcMain.cpp:162
 msgid "There are "
 msgstr "Faltam "
 
-#: wxDateCalcMain.cpp:156
+#: wxDateCalcMain.cpp:162
 msgid " days, "
 msgstr " dias,"
 
-#: wxDateCalcMain.cpp:156
+#: wxDateCalcMain.cpp:162
 msgid " hours and "
-msgstr "horas e "
+msgstr " horas e "
 
-#: wxDateCalcMain.cpp:156
+#: wxDateCalcMain.cpp:162
 msgid " minutes left."
-msgstr "minutos."
+msgstr " minutos."

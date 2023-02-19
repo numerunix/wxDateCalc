@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wxDateCalc\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-14 05:51+0100\n"
-"PO-Revision-Date: 2022-12-14 05:52+0100\n"
+"POT-Creation-Date: 2023-02-19 07:26+0100\n"
+"PO-Revision-Date: 2023-02-19 07:26+0100\n"
 "Last-Translator: \n"
 "Language-Team: Giulio Sorrentno\n"
 "Language: it\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.2.2\n"
+"X-Generator: Poedit 2.4.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: _\n"
 "X-Poedit-SearchPath-0: wxDateCalcMain.cpp\n"
@@ -53,22 +53,38 @@ msgstr "Inserisci la data: "
 msgid "Calculate"
 msgstr "Calcola"
 
-#: wxDateCalcMain.cpp:139
+#: wxDateCalcMain.cpp:96
+msgid "Images"
+msgstr "Immagini"
+
+#: wxDateCalcMain.cpp:140
 msgid "Un altro countdown in wxwidgets"
 msgstr "Un altro countdown in wxwidgets"
 
-#: wxDateCalcMain.cpp:155
+#: wxDateCalcMain.cpp:153
+msgid "Error"
+msgstr "Errore"
+
+#: wxDateCalcMain.cpp:153
+msgid "Invalid lvalue"
+msgstr "Valore non valido"
+
+#: wxDateCalcMain.cpp:162
+msgid "Information"
+msgstr "Informazione"
+
+#: wxDateCalcMain.cpp:162
 msgid "There are "
 msgstr "Mancano "
 
-#: wxDateCalcMain.cpp:155
+#: wxDateCalcMain.cpp:162
 msgid " days, "
 msgstr " giorni, "
 
-#: wxDateCalcMain.cpp:155
+#: wxDateCalcMain.cpp:162
 msgid " hours and "
 msgstr " ore e "
 
-#: wxDateCalcMain.cpp:155
+#: wxDateCalcMain.cpp:162
 msgid " minutes left."
 msgstr " minuti."
