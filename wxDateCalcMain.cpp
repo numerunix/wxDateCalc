@@ -54,7 +54,7 @@ BEGIN_EVENT_TABLE(wxDateCalcFrame, wxFrame)
 END_EVENT_TABLE()
 
 wxDateCalcFrame::wxDateCalcFrame(wxFrame *frame, const wxString& title)
-    : wxFrame(frame, -1, title)
+    : wxFrame(frame, -1, title, wxDefaultPosition, wxSize(300,300))
 {
 #if wxUSE_MENUS
     // create a menu bar
@@ -92,11 +92,12 @@ wxDateCalcFrame::wxDateCalcFrame(wxFrame *frame, const wxString& title)
     vbox->Add(new wxStaticText(this, wxID_ANY, _("Insert the date: ")), 0, wxALL, 4);
     vbox->Add(calendar, 0, wxALL, 4);
     calcola=new wxButton(this, ID_BUTTON_OK, _("Calculate"));
-    img=new wxImage(wxGetHomeDir()+"/background.jpg");
+    wxString s=wxFileName::GetPathSeparator();
+    img=new wxImage(wxGetHomeDir()+s+_("Images")+s+wxT("background.jpg"));
     vbox->Add(calcola, 0, wxALL, 4);
     SetSizer(vbox);
     Layout();
-    Fit();
+    //Fit();
 
 }
 
@@ -132,14 +133,14 @@ void wxDateCalcFrame::OnAbout(wxCommandEvent &event)
 	info.SetCopyright("(c) 2022 Giulio Sorrentino");
 	info.SetLicense("GPL v3 o (a tua discrezione) qualsiasi versione successiva.");
 	info.SetName("wxDateCalc");
-	info.SetVersion("0.1");
+        info.SetVersion("0.2");
 	info.SetWebSite("https://github.com/numerunix/wxdatecalc");
     wxArrayString traduttori = wxArrayString();
     traduttori.Add("Giulio Sorrentino <gsorre84@gmail.com>");
     info.SetDescription(_("Un altro countdown in wxwidgets"));
     info.SetTranslators(traduttori);
     #ifndef _WIN32
-    	info.SetIcon(wxIcon(background_xpm));
+        info.SetIcon(wxIcon(background_xpm));
     #endif
     wxAboutBox(info);
 }
@@ -148,11 +149,20 @@ void wxDateCalcFrame::OnOk(wxCommandEvent &evt) {
     data=calendar->GetDate();
     wxDateTime t1=wxDateTime::Now();
     wxTimeSpan ts=data.Subtract(t1);
+    if (ts.GetValue()<0) {
+        wxNotificationMessage *msg = new wxNotificationMessage(_("Error"), _("Invalid lvalue"), this);
+        msg->Show();
+        delete msg;
+        msg = NULL;
+    }
     wxString giorni, ore, minuti;
     giorni.Printf("%d", ts.GetDays());
     ore.Printf("%d", ts.GetHours()%24);
     minuti.Printf("%d", ts.GetMinutes()%60);
-    SetStatusText(_("There are ")+giorni+_(" days, ")+ore+_(" hours and ")+minuti+_(" minutes left."), 0);
+    wxNotificationMessage *msg = new wxNotificationMessage(_("Information"), _("There are ")+giorni+_(" days, ")+ore+_(" hours and ")+minuti+_(" minutes left."), this);
+    msg->Show();
+    delete msg;
+
 }
 
 
