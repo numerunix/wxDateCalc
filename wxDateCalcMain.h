@@ -17,8 +17,9 @@
 #include <wx/aboutdlg.h>
 #include <wx/config.h>
 #include <wx/datetime.h>
-#include <wx/utils.h> 
+#include <wx/utils.h>
 #include <wx/notifmsg.h>
+#include <wx/filename.h>
 
 #include "wxDateCalcApp.h"
 #include "background.xpm"
@@ -47,6 +48,7 @@ class wxDateCalcFrame: public wxFrame
         wxImage *img;
         wxConfig *config;
         wxDateTime data;
+        wxStaticText *result;
         DECLARE_EVENT_TABLE()
 };
 
