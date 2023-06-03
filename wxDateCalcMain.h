@@ -48,7 +48,6 @@ class wxDateCalcFrame: public wxFrame
         wxImage *img;
         wxConfig *config;
         wxDateTime data;
-        wxStaticText *result;
         DECLARE_EVENT_TABLE()
 };
 

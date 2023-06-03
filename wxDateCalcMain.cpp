@@ -95,8 +95,6 @@ wxDateCalcFrame::wxDateCalcFrame(wxFrame *frame, const wxString& title)
     wxString s=wxFileName::GetPathSeparator();
     img=new wxImage(wxGetHomeDir()+s+_("Images")+s+wxT("background.jpg"));
     vbox->Add(calcola, 0, wxALL, 4);
-    result=new wxStaticText(this, wxID_ANY, wxT(""));
-    vbox->Add(result, 0, wxALL, 4);
     SetSizer(vbox);
     Layout();
     //Fit();
@@ -152,15 +150,19 @@ void wxDateCalcFrame::OnOk(wxCommandEvent &evt) {
     wxDateTime t1=wxDateTime::Now();
     wxTimeSpan ts=data.Subtract(t1);
     if (ts.GetValue()<0) {
-	result->SetLabel(_("Invalid lvalue"));
+      wxNotificationMessage *msg = new wxNotificationMessage(_("Error"), _("Invalid lvalue"), this);
+        msg->Show();
+        delete msg;
+        msg = NULL;
         return;
     }
     wxString giorni, ore, minuti;
     giorni.Printf("%d", ts.GetDays());
     ore.Printf("%d", ts.GetHours()%24);
     minuti.Printf("%d", ts.GetMinutes()%60);
-result->SetLabel(_("There are ")+giorni+_(" days, ")+ore+_(" hours and ")+minuti+_(" minutes left."));
-
+    wxNotificationMessage *msg = new wxNotificationMessage(_("Information"), _("There are ")+giorni+_(" days, ")+ore+_(" hours and ")+minuti+_(" minutes left."), this);
+    msg->Show();
+    delete msg;
 }
 
 
