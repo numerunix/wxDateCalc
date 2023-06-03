@@ -16,7 +16,7 @@ donation: https://www.paypal.com/paypalme/numerunix
 apps:
   wxdatecalc: 
     adapter: full
-    command: usr/bin/wxdatecalc
+    command: usr/local/bin/org.altervista.numerone.wxdatecalc
     desktop: usr/share/applications/wxDateCalc.desktop
     extensions: [gnome-3-38]
     plugs:
