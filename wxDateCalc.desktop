@@ -1,5 +1,5 @@
 [Desktop Entry]
 Name=wxDateCalc
-Exec=wxdatecalc
+Exec=usr/local/bin/org.altervista.numerone.wxdatecalc
 Icon=${SNAP}/meta/gui/wxDateCalc.png
 Type=Application
