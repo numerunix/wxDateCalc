@@ -6,27 +6,12 @@ Another countdown app in wxwidgets
 
 [![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/wxdatecalc)
 
+# Tramite repository (consigliato)
+Seguite le istruzioni all'indirizzo http://numeronesoft.ddns.net
 
 
-# Tramite flatpak (consigliato perché ci sono le wxwidgets 3.2 invece che 3.0)
-Date i seguenti comandi:
-
-sudo apt install flatpak
-
-flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-
-flatpak remote-add --if-not-exists numeronesoft http://numeronesoft.ddns.net:8080/numeronesoft.flatpakrepo
-
-flatpak install --user org.altervista.numerone.wxdatecalc (è importante il --user, l'app viene installata in userspace, così si possono salvare le opzioni)
-
-flatpak run org.altervista.numerone.wxdatecalc
-
-# Tramite repository (con le wxwidgets 3.0)
-Installate la nuova chiave del repository tramite il comando sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 52B68EEB
-
-Poi inserite nel file /etc/apt/sources.list.d/numeronesoft.list la riga deb http://numeronesoft.ddns.net/ bullseye main
-
-Infine fate apt update ed apt install wxdatecalc
+# Tramite flatpak  (sconsigliato)
+Seguite le istruzioni all'indirizzo http://numeronesoft.ddns.net:8080
 
 # Compilazione con Flatpak
 Installate flatpak con apt, aggiungete il repository uficiale, installate flatpakbuilder con flatpak poi installateflathub org.gnome.Platform//43
