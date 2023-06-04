@@ -2,6 +2,12 @@
 Another countdown app in wxwidgets
 # Installazione
 
+
+
+[![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/wxdatecalc)
+
+
+
 # Tramite flatpak (consigliato perché ci sono le wxwidgets 3.2 invece che 3.0)
 Date i seguenti comandi:
 
